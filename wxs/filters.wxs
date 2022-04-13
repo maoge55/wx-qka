@@ -1,0 +1,58 @@
+
+var toFix = function (d) {
+  if(d==undefined){
+    return ''
+  }
+  return d.toFixed(2);
+}
+
+var namestr=function(name){
+  return name.slice(0,2)
+}
+
+var toCNY=function(price){
+  var i=0;
+  for(i=0;i<price.length;i++){
+    if(price[i]=='元'){
+      var j=i;
+      break;
+    }
+  }
+  return price.substring(0,j)
+}
+
+var stepph=function(obj){
+  if(obj.dayData!=undefined){
+    return obj.dayData
+  }
+  else{
+    if(obj.monthData!=undefined){
+      return obj.monthData.ms
+    }
+    else{
+      return obj.weekData.ws
+    }
+  }
+}
+
+var meiliph = function (obj) {
+  if (obj.dayRec != undefined) {
+    return obj.dayRec
+  }
+  else {
+    if (obj.monthRec != undefined) {
+      return obj.monthRec
+    }
+    else {
+      return obj.weekRec
+    }
+  }
+}
+
+module.exports = {
+  toFix:toFix,
+  toCNY:toCNY,
+  stepph:stepph,
+  meiliph: meiliph,
+  namestr:namestr
+}

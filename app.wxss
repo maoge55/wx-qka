@@ -1,0 +1,49 @@
+@import "/style/animate.wxss";
+@import "/style/icon_qka.wxss";
+@import "/style/iconfont.wxss";
+
+
+button {
+  background: initial;
+}
+
+button:focus{
+  outline: 0;
+}
+
+button::after{
+  border: none;
+}
+.title{
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+button {
+  background: initial;
+}
+
+button:focus{
+  outline: 0;
+}
+
+button::after{
+  border: none;
+}
+
+
+.dat-line{
+  width: 710rpx;
+  margin: 20rpx 20rpx 0 20rpx;
+  border-bottom: 4rpx darkred dashed;
+}
+
+.bottom {
+  border-radius: 80rpx;
+  margin: 70rpx 50rpx;
+  font-size: 35rpx;
+}
